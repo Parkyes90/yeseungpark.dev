@@ -37,7 +37,7 @@ try {
 module.exports = {
     siteMetadata: {
         siteUrl: config.siteUrl,
-        disqusShortname: `yeseungpark-dev`,
+        disqusShortname: `yeseungpark-dev`
     },
     plugins: [
         /**
