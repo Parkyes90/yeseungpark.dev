@@ -12,7 +12,7 @@ module.exports = {
   disqusSiteUrl: 'https://yeseungpark-dev.disqus.com',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
   pathPrefix: '/gatsby-starter-morning-dew', // Note: it must *not* have a trailing slash.
-  siteCover: '/images/writer-2711949_960_720.jpg',
+  siteCover: '/images/code-coder-coding-270348.jpg',
   googleAnalyticsId: 'UA-138876150-1',
   background_color: '#ffffff',
   theme_color: '#222222',
@@ -26,7 +26,7 @@ module.exports = {
     //   url: '/',
     // },
     {
-      label: 'Blog',
+      label: 'YeseungPark Blog',
       url: '/',
     },
     // {
