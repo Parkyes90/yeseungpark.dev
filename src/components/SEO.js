@@ -23,10 +23,23 @@ class SEO extends React.Component {
 
     return (
       <Helmet title={title}>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-138876150-1"
+        />
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'UA-138876150-1');
+        </script>
+
         {/* General tags */}
         <html lang={lang} />
         <meta name="description" content={description} />
-        <meta name="google-site-verification" content="OqRPvfIBa6oz4rK2u7xDLw54pMAjbegD7rAg0zgE8iI" />
+        <meta
+          name="google-site-verification"
+          content="OqRPvfIBa6oz4rK2u7xDLw54pMAjbegD7rAg0zgE8iI"
+        />
         <link rel="canonical" href={formatedSiteUrl + withPrefix(path)} />
 
         {/* OpenGraph tags */}
