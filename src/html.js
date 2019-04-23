@@ -17,6 +17,7 @@ export default class HTML extends React.Component {
             rel="stylesheet"
           />
           {this.props.headComponents}
+
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

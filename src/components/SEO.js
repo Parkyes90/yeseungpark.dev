@@ -22,17 +22,23 @@ class SEO extends React.Component {
     const description = this.props.description || siteConfig.siteDescription
 
     return (
-      <Helmet title={title}>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-138876150-1"
-        />
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'UA-138876150-1');
-        </script>
+      <Helmet
+        title={title}
+        script={[
+          {
+            src: 'https://www.googletagmanager.com/gtag/js?id=UA-138876150-1',
+            type: 'text/javascript',
+          },
+          {
+            type: 'text/javascript',
+            innerHTML: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-138876150-1');`,
+          },
+        ]}
+      >
         {/* General tags */}
         <html lang={lang} />
         <meta name="description" content={description} />
