@@ -26,6 +26,7 @@ class SEO extends React.Component {
         {/* General tags */}
         <html lang={lang} />
         <meta name="description" content={description} />
+        <meta name="google-site-verification" content="OqRPvfIBa6oz4rK2u7xDLw54pMAjbegD7rAg0zgE8iI" />
         <link rel="canonical" href={formatedSiteUrl + withPrefix(path)} />
 
         {/* OpenGraph tags */}
